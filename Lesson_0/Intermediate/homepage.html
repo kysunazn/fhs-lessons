@@ -2,41 +2,61 @@
 <html>
   <head>
     <title>My Homepage</title>
+    <link rel="stylesheet" href="homepage_styles_compiled.css" type="text/css" media="all">
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#main-nav a").click(function() {
+          $("#main-nav a").removeClass("selected");
+          $(this).addClass("selected");
+        });
+      });
+    </script>
   </head>
   <body>
-    <h1>My Beautiful Homepage</h1>
-    <nav id="main-nav">
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
-        <li>
-          <a href="/portfolio">Portfolio</a>
-        </li>
-      </ul>
-    </nav>
-    
-    <div id="body-container">
-      <div id="blog">
-        <h2>Latest blog post:</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Maecenas vel nisi mi, sit amet pulvinar leo. Nullam diam nunc, 
-          mattis in mattis nec, fermentum ut.
-        </p>
-      </div>
-      <div id="photo">
-        <h2>Featured photo:</h2>
-        <div id="photo-container">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Ailurus_fulgens_RoterPanda_LesserPanda.jpg/220px-Ailurus_fulgens_RoterPanda_LesserPanda.jpg">
+    <div id="container">
+      <h1>My Beautiful Homepage</h1>
+      <nav id="main-nav">
+        <ul>
+          <li>
+            <a href="#" class="selected">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div id="body-container">
+        <div class="column">
+          <h2>Latest blog post:</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas vel nisi mi, sit amet pulvinar leo. Nullam diam nunc, 
+            mattis in mattis nec, fermentum ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas vel nisi mi, sit amet pulvinar leo. Nullam diam nunc, 
+            mattis in mattis nec, fermentum ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas vel nisi mi, sit amet pulvinar leo. Nullam diam nunc, 
+            mattis in mattis nec, fermentum ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas vel nisi mi, sit amet pulvinar leo. Nullam diam nunc, 
+            mattis in mattis nec, fermentum ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas vel nisi mi, sit amet pulvinar leo. Nullam diam nunc, 
+            mattis in mattis nec, fermentum ut. 
+          </p>
+        </div>
+        <div class="column">
+          <h2>Featured photo:</h2>
+          <div id="photo-container">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Ailurus_fulgens_RoterPanda_LesserPanda.jpg/220px-Ailurus_fulgens_RoterPanda_LesserPanda.jpg">
+          </div>
         </div>
       </div>
-    </div>
+      
   </body>
 </html>
