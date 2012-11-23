@@ -1,6 +1,8 @@
 1. Write a program that allows the user to input a string and a number, and then prints the string that number of times.
    Example: User inputs the string "hi" and the number 15. The program prints the word hi 15 times.
+   
    Answer:
+   
      Python27 Implementation:
      
      ```python
@@ -23,6 +25,7 @@
      ```
 
 2. Sum the first 100 even numbers starting with 2.
+    
     Answer: 10100
 
     ```ruby
@@ -41,6 +44,7 @@
  
 3. Write a program to compute the remainder of a quotient.
     Example: The remainder of 12/5 is 2.
+    
     Answer:
 
     ```ruby
@@ -55,6 +59,7 @@
     ```
 
 4. Write a program to display a fibonacci sequence and use it to find the 253rd term.
+    
     Answer: 33449372971981195681356806732944396691005381570580873
 
     ```ruby
@@ -75,13 +80,16 @@
 
 5. Given the following javascript code, how many times will the text "Hello World!" be printed to the console?
   
+  ```javascript
   for (i=1;i<10;i++){
     for (j=0;j<=i;j++){
       console.log("Hello World!");
     }
   }
+  ```
   
   Answer: 54 times
+  
   ![equation](http://latex.codecogs.com/gif.latex?\sum_{i%20=%201}^{9}i%20+%201)
 
 

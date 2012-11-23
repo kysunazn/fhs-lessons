@@ -18,13 +18,13 @@
     ```ruby
     require 'rubygems'
     require 'json'
-    require 'net/http'
     require 'open-uri'
     
-    response = Net::HTTP.get_response(URI.parse("http://xkcd.com/info.0.json")) # I cheated and used his api
-    data = JSON.parse(response.body)
+    response = open("http://xkcd.com/info.0.json") # I cheated and used his api
+    data = JSON.parse(response.read)
+    response.close
     
-    file = open("XKCD_#{data["num"]}.png", "wb")
+    file = open("XKCD_#{data["num"]}_#{data["title"]}.png", "wb")
     image = open(data["img"])
     file.write(image.read)
     image.close
